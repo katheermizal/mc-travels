@@ -1,0 +1,270 @@
+.mc {
+	&__sidebar {
+		.mc__logo,
+		section {
+			width: 100%;
+			float: left;
+		}
+
+		.menu-toggle {
+			display: none;
+		} 
+
+		.mc__logo {
+			margin: 0 0 15px;
+
+			img {
+				width: 100%;
+    			height: auto;
+			}
+		}
+
+		.contact__title {
+			h2 {
+				margin: 0 0 15px;
+				font-size: 1.5rem;
+				font-weight: 400;
+				font-style: italic;
+				letter-spacing: 0.8px;
+
+				span {
+					display: inline-block;
+					width: 100%;
+					margin-top: 5px;
+					font-size: 3rem;
+					font-weight: 600;
+					font-style: normal;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+}
+
+/***/
+
+form.wpcf7-form {
+	margin: 0;
+
+	p {
+		margin: 0;
+	}
+}
+
+form.wpcf7-form {
+	.wpcf7-form-control-wrap  {
+		margin: 0 0 15px;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.wpcf7-text {
+		height: 40px;
+		background-color: transparent !important;
+		border: 1px solid #000;
+		color: #fff;
+		box-shadow: none !important;
+		border-radius: 5px;
+		width: 100%;
+		max-width: 100%;
+		min-width: 1px;
+		text-indent: 15px;
+
+		&::-webkit-input-placeholder { /* Edge */
+		  color: #fff;
+		}
+
+		&:-ms-input-placeholder { /* Internet Explorer 10-11 */
+		  color:  #fff;
+		}
+
+		&::placeholder {
+		  color:  #fff;
+		}
+	}
+
+	.wpcf7-submit {
+		float: right;
+		padding: 10px 10px;
+		width: auto;
+		border: none;
+		border-radius: 5px;
+		background-color: #fff;
+		color: #000;
+		font-size: 0.8rem;
+		text-transform: uppercase;
+		min-width: 120px;
+		font-weight: 400;
+		letter-spacing: 0.5px;
+		cursor: pointer;
+		transition: 0.4s ease all;
+	}
+}
+
+div.wpcf7 {
+	margin: 0;
+	padding: 0;
+}
+
+div.wpcf7 .screen-reader-response {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	width: 1px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+div.wpcf7-mail-sent-ok,
+div.wpcf7-response-output,
+div.wpcf7-mail-sent-ng,
+div.wpcf7-aborted,
+div.wpcf7-spam-blocked,
+div.wpcf7-validation-errors,
+div.wpcf7-acceptance-missing {
+	border-radius: 5px;
+	color: #fff;
+	font-size: 0.8rem;
+	letter-spacing: 0.4px;
+	max-width: 320px;
+}
+
+div.wpcf7-response-output {
+	margin: 5px 0 0;
+	padding: 5px 10px;
+	border: 1px solid #ff0000;
+}
+
+div.wpcf7-mail-sent-ok {
+	border: 1px solid #398f14;
+	background-color: #398f14;
+}
+
+div.wpcf7-mail-sent-ng,
+div.wpcf7-aborted {
+	border: 2px solid #ff0000;
+	background-color: #ff0000;
+}
+
+div.wpcf7-spam-blocked {
+	border: 2px solid #ffa500;
+	background-color: #ffa500;
+}
+
+div.wpcf7-validation-errors,
+div.wpcf7-acceptance-missing {
+	border: 2px solid #f7e700;
+	background-color: #f7e700;
+}
+
+.wpcf7-form-control-wrap {
+	position: relative;
+}
+
+span.wpcf7-not-valid-tip {
+    color: #f00;
+    font-size: 0.8rem;
+    font-weight: normal;
+    display: block;
+    margin: 5px 0 0;
+}
+
+.use-floating-validation-tip span.wpcf7-not-valid-tip {
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	z-index: 100;
+	border: 1px solid #ff0000;
+	background: #fff;
+	padding: .2em .8em;
+}
+
+span.wpcf7-list-item {
+	display: inline-block;
+	margin: 0 0 0 1em;
+}
+
+span.wpcf7-list-item-label::before,
+span.wpcf7-list-item-label::after {
+	content: " ";
+}
+
+.wpcf7-display-none {
+	display: none;
+}
+
+div.wpcf7 .ajax-loader {
+	visibility: hidden;
+	display: inline-block;
+	background-image: url('../../images/ajax-loader.gif');
+	width: 16px;
+	height: 16px;
+	border: none;
+	padding: 0;
+	margin: 0 0 0 4px;
+	vertical-align: middle;
+}
+
+div.wpcf7 .ajax-loader.is-active {
+	visibility: visible;
+}
+
+div.wpcf7 div.ajax-error {
+	display: none;
+}
+
+div.wpcf7 .placeheld {
+	color: #888;
+}
+
+div.wpcf7 input[type="file"] {
+	cursor: pointer;
+}
+
+div.wpcf7 input[type="file"]:disabled {
+	cursor: default;
+}
+
+div.wpcf7 .wpcf7-submit:disabled {
+	cursor: not-allowed;
+}
+
+
+
+@media(min-width: 992px){
+	.mc {
+		&__sidebar {
+			.mc__logo {
+				a {
+					display: inline-block;
+    				max-width: 115px;
+				}
+			}
+
+			.wpcf7-submit:hover {
+				background-color: #000;
+				color: #fff; 
+			}
+		}
+	}	
+}
+
+
+@media(max-width: 991px){
+	.mc {
+		&__sidebar {
+			.contact__title {
+				h2 {
+					margin: 25px 0 10px;
+
+					span {
+						width: auto;
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+}
